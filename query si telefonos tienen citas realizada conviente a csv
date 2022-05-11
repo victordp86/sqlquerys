@@ -1,0 +1,2 @@
+> SELECT DISTINCT l.telefono, l.fecha, IF(l.telefono, "Si", "No") FROM Cliente cl JOIN Cita ci ON cl.id = ci.cliente_id JOIN Instalacion i ON cl.instalacion_id = i.id JOIN lead_1 l ON cl.telefonoMovil = l.telefono AND ci.estado_id IN (1) ORDER BY l.id ASC     INTO OUTFILE  '/var/lib/mysql-files/completo.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n';
+

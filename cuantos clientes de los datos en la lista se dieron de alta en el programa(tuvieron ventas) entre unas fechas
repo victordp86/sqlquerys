@@ -1,0 +1,7 @@
+/* Necesitaría saber de estos id de clientes que te adjunto en la lista, cuántos se dieron de alta en el programa durante los meses de agosto y septiembre de 2021, es decir, cuántos eran nuevos clientes a la hora de comprar la promoción. */
+SELECT cl.nombre AS "NOMBRE", cl.nombre AS "NOMBRE", cl.apellido1 AS "PRIMER APELLIDO", cl.apellido2 AS "SEGUNDO APELLIDO", i.descripcion AS "CENTRO", s.descripcion AS "GÉNERO", cl.telefonoMovil AS "T. MOVIL", cl.telefonoFijo AS "T. FIJO", cl.email AS "EMAIL", cl.direccion AS "DIRECCIÓN",  cl.ciudad AS "CIUDAD", cl.codigoPostal "CÓDIGO POSTAL"
+FROM Cliente 
+JOIN Instalacion i ON i.id = cl.instalacion_id
+WHERE cl.id IN (
+"670694", "677189", "608892", "555414", "660350", "691251", "689849", "576838", "568248", "657909", "698895", "680866", "706976", "682888", "707083", "703559", "494582", "583510", "667121", "620866", "712418"
+)

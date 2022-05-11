@@ -1,0 +1,1 @@
+CONCAT_WS(" ",cl.nombre, cl.apellido1, cl.apellido2) 

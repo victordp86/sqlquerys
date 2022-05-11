@@ -1,0 +1,4 @@
+SELECT DISTINCT cl.clienteEmbajador_id, i.descripcion, count(1) FROM Cliente cl
+JOIN Instalacion i ON cl.instalacion_id = i.id 
+WHERE cl.clienteEmbajador_id IS NOT NULL
+group by instalacion_id;
